@@ -4,243 +4,276 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Lander App (CSS Grid + Flexbox)</title>
 </head>
 
-<body>
-    
-    <div class="container">
-        <header class="header" id="header">
-            
-            <div class="logo">
-                Logo
-            </div>
-    
-            <nav class="nav">
-                <div class="nav__toggle">
-                    &#8801;
+<body class="container grid-page">
+
+    <header class="header grid-page" id="header">
+
+        <div class="grid-wrapper">
+            <div class="brand">
+                <div class="logo">
+                    Logo
                 </div>
-                <ul class="nav__menu">
-                    <li class="nav__menu-item">Item</li>
-                    <li class="nav__menu-item">Item</li>
-                    <li class="nav__menu-item">Item</li>
-                    <li class="nav__menu-item">Item</li>
-                    <li class="nav__menu-item">Item</li>
-                </ul>
-            </nav>
-    
+
+                <nav class="nav">
+                    <div class="nav__toggle">
+                        &#8801;
+                    </div>
+                    <ul class="nav__menu">
+                        <li class="nav__menu-item">Item</li>
+                        <li class="nav__menu-item">Item</li>
+                        <li class="nav__menu-item">Item</li>
+                        <li class="nav__menu-item">Item</li>
+                        <li class="nav__menu-item">Item</li>
+                    </ul>
+                </nav>
+            </div>
+
             <div class="hero">
                 <h1 class="heading-primary">Hero slogan</h1>
                 <a href="#" class="btn btn--white">Download app</a>
                 <a href="#" class="btn">View more</a>
             </div>
             <img src="#" alt="Picture of a smartphone" class="hero__img">
-    
-        </header>
-    
-        <section class="features-1">
-            <h2 class="heading-secondary">Main Features</h2>
-            <div class="features-1__group">
-                <div class="feature">
-                        <svg class="icon">
-                            <use xlink:href="#"></use>
-                        </svg>
-                        <h3 class="heading-tertiary">Heading 3</h3>
-                        <p class="feature__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero illum, fugiat aut id architecto quo.</p>
-                </div>
-                <div class="feature">
-                        <svg class="icon">
-                            <use xlink:href="#"></use>
-                        </svg>
-                        <h3 class="heading-tertiary">Heading 3</h3>
-                        <p class="feature__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero illum, fugiat aut id architecto quo.</p>
-                </div>
-                <div class="feature">
-                        <svg class="icon">
-                            <use xlink:href="#"></use>
-                        </svg>
-                        <h3 class="heading-tertiary">Heading 3</h3>
-                        <p class="feature__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero illum, fugiat aut id architecto quo.</p>
-                </div>
-            </div>
-        </section>
-    
-        <section class="quotes">
-            <p class="quote">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias enim architecto, est et nisi ducimus!</p>
-        </section>
-    
-        <section class="features-2">
-                <h2 class="heading-secondary">Be Smarter with Our Applications</h2>
-                <div class="feature">
-                        <svg class="icon">
-                            <use xlink:href="#"></use>
-                        </svg>
-                        <h3 class="heading-tertiary">Heading 3</h3>
-                        <p class="feature__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero illum, fugiat aut id architecto quo.</p>
-                </div>
-                <div class="feature">
-                        <svg class="icon">
-                            <use xlink:href="#"></use>
-                        </svg>
-                        <h3 class="heading-tertiary">Heading 3</h3>
-                        <p class="feature__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero illum, fugiat aut id architecto quo.</p>
-                </div>
-                <img src="#" alt="Picture of a smartphone" class="features-2__img">
-        </section>
-    
-        <section class="features-3">
-            <div class="features-3__group">
-                <h2 class="heading-secondary">Check Out These Great Features</h2>
-    
-                        <div class="feature">
-                                <svg class="icon">
-                                    <use xlink:href="#"></use>
-                                </svg>
-                                <h3 class="heading-tertiary">Heading 3</h3>
-                                <p class="feature__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero illum, fugiat aut id architecto quo.</p>
-                        </div>
-                        <div class="feature">
-                                <svg class="icon">
-                                    <use xlink:href="#"></use>
-                                </svg>
-                                <h3 class="heading-tertiary">Heading 3</h3>
-                                <p class="feature__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero illum, fugiat aut id architecto quo.</p>
-                        </div>
-                        <img src="#" alt="Picture of a smartphone" class="features-3__img">
-                        <div class="feature">
-                                <svg class="icon">
-                                    <use xlink:href="#"></use>
-                                </svg>
-                                <h3 class="heading-tertiary">Heading 3</h3>
-                                <p class="feature__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero illum, fugiat aut id architecto quo.</p>
-                        </div>
-                        <div class="feature">
-                                <svg class="icon">
-                                    <use xlink:href="#"></use>
-                                </svg>
-                                <h3 class="heading-tertiary">Heading 3</h3>
-                                <p class="feature__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero illum, fugiat aut id architecto quo.</p>
-                        </div>
-            </div>
+        </div>
 
-        </section>
+    </header>
+
+    <section class="features-1 grid-page">
+        <h2 class="heading-secondary features-1__heading">Main Features</h2>
+        <div class="grid-wrapper features-1__wrapper">
+            <div class="feature">
+                <svg class="icon">
+                    <use xlink:href="#"></use>
+                </svg>
+                <h3 class="heading-tertiary">Heading 3</h3>
+                <p class="feature__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero illum, fugiat
+                    aut id architecto quo.</p>
+            </div>
+            <div class="feature">
+                <svg class="icon">
+                    <use xlink:href="#"></use>
+                </svg>
+                <h3 class="heading-tertiary">Heading 3</h3>
+                <p class="feature__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero illum, fugiat
+                    aut id architecto quo.</p>
+            </div>
+            <div class="feature">
+                <svg class="icon">
+                    <use xlink:href="#"></use>
+                </svg>
+                <h3 class="heading-tertiary">Heading 3</h3>
+                <p class="feature__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero illum, fugiat
+                    aut id architecto quo.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="quotes">
+        <p class="quote">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias enim architecto, est et
+            nisi ducimus!</p>
+    </section>
+
+    <section class="features-2">
+            <h2 class="heading-secondary">Be Smarter with Our Applications</h2>
+            <div class="feature">
+                <svg class="icon">
+                    <use xlink:href="#"></use>
+                </svg>
+                <h3 class="heading-tertiary">Heading 3</h3>
+                <p class="feature__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero illum, fugiat
+                    aut id architecto quo.</p>
+            </div>
+            <div class="feature">
+                <svg class="icon">
+                    <use xlink:href="#"></use>
+                </svg>
+                <h3 class="heading-tertiary">Heading 3</h3>
+                <p class="feature__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero illum, fugiat
+                    aut id architecto quo.</p>
+            </div>
+            <img src="#" alt="Picture of a smartphone" class="features-2__img">
+    </section>
+
+    <section class="features-3 grid-page">
+        <h2 class="heading-secondary features-3__heading">Check Out These Great Features</h2>
+        <div class="grid-wrapper">
+            <div class="feature">
+                <svg class="icon">
+                    <use xlink:href="#"></use>
+                </svg>
+                <h3 class="heading-tertiary">Heading 3</h3>
+                <p class="feature__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero illum, fugiat
+                    aut id architecto quo.</p>
+            </div>
+            <div class="feature">
+                <svg class="icon">
+                    <use xlink:href="#"></use>
+                </svg>
+                <h3 class="heading-tertiary">Heading 3</h3>
+                <p class="feature__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero illum, fugiat
+                    aut id architecto quo.</p>
+            </div>
+            <img src="#" alt="Picture of a smartphone" class="features-3__img">
+            <div class="feature">
+                <svg class="icon">
+                    <use xlink:href="#"></use>
+                </svg>
+                <h3 class="heading-tertiary">Heading 3</h3>
+                <p class="feature__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero illum, fugiat
+                    aut id architecto quo.</p>
+            </div>
+            <div class="feature">
+                <svg class="icon">
+                    <use xlink:href="#"></use>
+                </svg>
+                <h3 class="heading-tertiary">Heading 3</h3>
+                <p class="feature__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero illum, fugiat
+                    aut id architecto quo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <h2 class="heading-secondary">Application Gallery</h2>
+        <img src="#" alt="App screenshot" class="gallery__img">
+        <img src="#" alt="App screenshot" class="gallery__img">
+        <img src="#" alt="App screenshot" class="gallery__img">
+        <img src="#" alt="App screenshot" class="gallery__img">
+        <img src="#" alt="App screenshot" class="gallery__img">
+        <img src="#" alt="App screenshot" class="gallery__img">
+        <img src="#" alt="App screenshot" class="gallery__img">
+        <img src="#" alt="App screenshot" class="gallery__img">
+    </section>
+
+    <section class="download download-grid">
     
-        <section class="gallery">
-            <h2 class="heading-secondary">Application Gallery</h2>
-            <img src="#" alt="App screenshot" class="gallery__img">
-            <img src="#" alt="App screenshot" class="gallery__img">
-            <img src="#" alt="App screenshot" class="gallery__img">
-            <img src="#" alt="App screenshot" class="gallery__img">
-            <img src="#" alt="App screenshot" class="gallery__img">
-            <img src="#" alt="App screenshot" class="gallery__img">
-            <img src="#" alt="App screenshot" class="gallery__img">
-            <img src="#" alt="App screenshot" class="gallery__img">
-        </section>
-    
-        <section class="download">
+            <h2 class="heading-secondary">Download Application</h2>
             <a href="#" class="btn btn--white">Apple AppStore</a>
             <a href="#" class="btn btn--white">Google Play</a>
-        </section>
-    
-        <section class="team">
-            <h2 class="heading-secondary">Our Team</h2>
-            <div class="team__member">
-                <h3 class="heading-tertiary">Some Name</h3>
+  
+    </section>
+
+    <section class="team grid-wrapper-4">
+        <h2 class="heading-secondary team__heading">Our Team</h2>
+        <div class="team__member">
+            <h3 class="heading-tertiary">Some Name</h3>
             <p class="team__position">Any Position</p>
         </div>
-            <div class="team__member">
-                <h3 class="heading-tertiary">Some Name</h3>
+        <div class="team__member">
+            <h3 class="heading-tertiary">Some Name</h3>
             <p class="team__position">Any Position</p>
         </div>
-            <div class="team__member">
-                <h3 class="heading-tertiary">Some Name</h3>
+        <div class="team__member">
+            <h3 class="heading-tertiary">Some Name</h3>
             <p class="team__position">Any Position</p>
         </div>
-            <div class="team__member">
-                <h3 class="heading-tertiary">Some Name</h3>
-            <p class="team__position">Any Position</p>
+        <div class="team__member">
+            <h3 class="heading-tertiary">Some Name</h3>
+            <p class="team__position">Any pagesition</p>
         </div>
-        </section>
-    
-        <section class="numbers">
-            <div class="numbers__digit">
-                12
+    </section>
+
+    <section class="numbers grid-page">
+        
+            <div class="grid-wrapper-4">
+                <div class="number">
+                    <div class="numbers__digit">
+                        12
+                    </div>
+                    <p class="numbers__source">
+                        whoever does whatever
+                    </p>
+                </div>
+                <div class="number">
+                    <div class="numbers__digit">
+                        12
+                    </div>
+                    <p class="numbers__source">
+                        whoever does whatever
+                    </p>
+                </div>
+                <div class="number">
+                    <div class="numbers__digit">
+                        12
+                    </div>
+                    <p class="numbers__source">
+                        whoever does whatever
+                    </p>
+                </div>
+                <div class="number">
+                    <div class="numbers__digit">
+                        12
+                    </div>
+                    <p class="numbers__source">
+                        whoever does whatever
+                    </p>
+                </div>
             </div>
-            <p class="numbers__source">
-                whoever does whatever
-            </p>
-            <div class="numbers__digit">
-                12
-            </div>
-            <p class="numbers__source">
-                whoever does whatever
-            </p>
-            <div class="numbers__digit">
-                12
-            </div>
-            <p class="numbers__source">
-                whoever does whatever
-            </p>
-            <div class="numbers__digit">
-                12
-            </div>
-            <p class="numbers__source">
-                whoever does whatever
-            </p>
-        </section>
-    
-        <section class="subscribe">
-            <h2 class="heading-secondary">Be notified about the hot updates!</h2>
-            <form action="#">
-                <input type="email" placeholder="Enter your email">
-                <button type="submit">Subscribe</button>
-            </form>
-        </section>
-    
-        <section class="partners">
-            <h2 class="heading-secondary">Partners</h2>
+
+    </section>
+
+    <section class="subscribe">
+        <h2 class="heading-secondary subscribe__heading">Be notified about the hot updates!</h2>
+        <form action="#" class="subscribe__form">
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <section class="partners">
+        <h2 class="heading-secondary">Partners</h2>
+        <div class="partners__logos">
             <img src="#" alt="Partner logo" class="partners__logo">
             <img src="#" alt="Partner logo" class="partners__logo">
             <img src="#" alt="Partner logo" class="partners__logo">
             <img src="#" alt="Partner logo" class="partners__logo">
             <img src="#" alt="Partner logo" class="partners__logo">
-        </section>
-    
-        <section class="contact">
-            <h2 class="heading-secondary">Contact Us</h2>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2 class="heading-secondary">Contact Us</h2>
+        <address class="address">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quos facilis accusamus quibusdam illo
+            ducimus nihil velit voluptatem optio itaque!
+        </address>
+        <form action="#" class="contact__form">
+            <input type="text">
+            <input type="email">
+            <textarea name="formMessage" id="formMessage" cols="30" rows="10"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__col">
+            <h2 class="heading-secondary">About Us</h2>
+            <div class="footer__about">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis nisi
+                asperiores cupiditate delectus dolores, numquam consequatur voluptatibus recusandae rerum suscipit
+                veniam necessitatibus ut totam modi eius. Soluta tenetur amet error.</div>
+        </div>
+        <div class="footer__col">
+            <h2 class="heading-secondary">Contact</h2>
             <address class="address">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quos facilis accusamus quibusdam illo ducimus nihil velit voluptatem optio itaque!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quos facilis accusamus quibusdam
+                illo ducimus nihil velit voluptatem optio itaque!
             </address>
-            <form action="#" class="contact__form">
-                <input type="text">
-                <input type="email">
-                <textarea name="formMessage" id="formMessage" cols="30" rows="10"></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    
-        <footer class="footer">
-            <div class="footer__col">
-                <h2 class="heading-secondary">About Us</h2>
-                <div class="footer__about">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis nisi asperiores cupiditate delectus dolores, numquam consequatur voluptatibus recusandae rerum suscipit veniam necessitatibus ut totam modi eius. Soluta tenetur amet error.</div>
-            </div>
-            <div class="footer__col">
-                <h2 class="heading-secondary">Contact</h2>
-                <address class="address">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quos facilis accusamus quibusdam illo ducimus nihil velit voluptatem optio itaque!
-                    </address>
-            </div>
-            <div class="footer__col">
-                <h2 class="heading-secondary">Recent Tweets</h2>
-            </div>
-            <div class="footer__byline">
-                <p class="copyright">(c) Arkady Kuznetsov, 2019</p>
-                <a href="#header" class="to-top">To top</a>
-            </div>
-        </footer>
-    </div>
+        </div>
+        <div class="footer__col">
+            <h2 class="heading-secondary">Recent Tweets</h2>
+        </div>
+        <div class="footer__byline">
+            <p class="copyright">(c) Arkady Kuznetsov, 2019</p>
+            <a href="#header" class="to-top">To top</a>
+        </div>
+    </footer>
 </body>
 
 </html>
