@@ -1,0 +1,114 @@
+.container {
+    display: grid;
+    grid-template-rows: 80vh;
+    grid-auto-rows: minmax(min-content, 10rem);
+}
+
+.header {
+    background: salmon;
+}
+
+.logo {
+}
+.nav {
+}
+.nav__toggle {
+}
+.nav__menu {
+}
+.nav__menu-item {
+}
+.hero {
+}
+.h1 {
+}
+.heading-primary {
+}
+.btn {
+}
+.btn--white {
+}
+.hero__img {
+}
+.features-1 {
+    background: #333333;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(min-content, 1fr));
+    
+}
+.heading-secondary {
+}
+.feature {
+}
+.icon {
+}
+.heading-tertiary {
+}
+.feature__text {
+}
+.quotes {
+    background: greenyellow;
+}
+.quote {
+}
+.features-2 {
+    background: lightblue;
+}
+.features-2__img {
+}
+.features-3 {
+    background: lightcoral;
+}
+.features-3__img {
+}
+.gallery {
+    background: lightgoldenrodyellow;
+}
+.gallery__img {
+}
+.download {
+    background: chocolate;
+}
+.team {
+    background: magenta;
+}
+.team__member {
+}
+.team__position {
+}
+.numbers {
+    background: mediumturquoise;
+}
+.numbers__digit {
+}
+.numbers__source {
+}
+.subscribe {
+    background: darkgray;
+}
+.partners {
+    background: papayawhip;
+}
+.partners__logo {
+}
+.contact {
+    background: blueviolet;
+}
+.address {
+}
+.contact__form {
+}
+.footer {
+    background: blanchedalmond; 
+}
+.footer__col {
+}
+.footer__about {
+}
+.footer__byline {
+    background: red; 
+}
+.copyright {
+}
+.to-top {
+}
