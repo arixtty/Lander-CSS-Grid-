@@ -1,0 +1,20 @@
+{
+  "name": "lander",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arixtty/Lander-CSS-Grid-.git"
+  },
+  "author": "Arkady Kuznetsov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arixtty/Lander-CSS-Grid-/issues"
+  },
+  "homepage": "https://github.com/arixtty/Lander-CSS-Grid-#readme",
+  "dependencies": {}
+}
