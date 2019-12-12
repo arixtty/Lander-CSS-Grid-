@@ -13,6 +13,12 @@ body {
   box-sizing: border-box;
 }
 
+/* Slick Slider dots position reset */
+
+.slick-dots {
+  position: static;
+}
+
 .icon {
   height: 3rem;
   width: 3rem;
@@ -343,9 +349,10 @@ background: #fff;
 }
 
 .gallery__img {
-  max-width: 80%;
+  max-width: 70%;
   height: auto;
   display: block;
+  margin: 0 auto;
 }
 
 .gallery__slider {
@@ -465,7 +472,6 @@ background: #fff;
 }
 
 .numbers__wrapper {
-  /* justify-content: center; */
   grid-gap: 2vw;
 }
 
@@ -752,11 +758,6 @@ p[class*="contact__"] {
 }
 
 @media only screen and (max-width: 52.25em) {
-  header > *,
-  section > *,
-  footer > * {
-    padding: 0 5rem;
-  }
 
   .container {
     grid-template-rows: auto;
@@ -810,6 +811,7 @@ p[class*="contact__"] {
     grid-column: auto;
     grid-row: 6;
     justify-self: center;
+    max-width: 50%;
   }
 
   .team,
@@ -832,6 +834,9 @@ p[class*="contact__"] {
   .subscribe__form {
     grid-column: 1 / -1;
     justify-self: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   .contact__form {
     grid-column: 1 / -1;
@@ -860,8 +865,8 @@ p[class*="contact__"] {
 
 @media only screen and (max-width: 36em) {
   .hero__img {
-    justify-self: end;
-
+    justify-self: center;
+    max-width: 100%;
   }
   .features-2 {
     grid-template-columns: 1fr;
@@ -871,6 +876,10 @@ p[class*="contact__"] {
     grid-column: 1 / -1;
     padding: 0;
     margin: 0 auto;
+  }
+
+  .features-3__img {
+    max-width: 70%;
   }
 
   .download {
@@ -888,8 +897,8 @@ p[class*="contact__"] {
   }
 
   .download .btn {
-    padding: 2rem 2rem;
-    width: 100%;
+    /* padding: 2rem 2rem; */
+    max-width: 100%;
   }
 
   .download .btn:nth-of-type(1) {
@@ -898,6 +907,43 @@ p[class*="contact__"] {
 
   .download .btn:nth-of-type(2) {
     grid-column: 3 / -1;
+  }
+
+  .team,
+  .numbers__wrapper {
+    grid-template-columns: 1fr;
+
+      grid-gap: 10vw;
+
+  }
+  .numbers__number:nth-of-type(2)::after {
+    display: block;
+  }
+.numbers__number:not(:last-child)::after {
+    content: "";
+    background: #ea5f4d;
+    position: absolute;
+    right: 50%;
+    top: 0;
+    bottom: -150%;
+    width: 2px;
+    transform: rotateZ(90deg);
+  }
+
+  .subscribe {
+    grid-gap: 0;
+  }
+  .subscribe__form input {
+    min-height: 2rem;
+    padding: 5px;
+margin-bottom: 5px;
+    /* margin-top: 5px; */
+  }
+  .subscribe__form button {
+    min-height: 2rem;
+    padding: 5px;
+    margin-bottom: 5px;
+
   }
 
   .footer__wrapper {
